@@ -7,3 +7,154 @@
 html{
     scroll-behavior: smooth;
 }
+
+body{
+    background: #1a1a1a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background: #fff;
+    margin-top: 15px;
+    width: 50%;
+}
+
+.title .moon{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    box-shadow: 8px 8px 0px 0px black;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.title h1{
+    color: black;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.main-content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content img{
+    width: 45%;
+    -webkit-user-drag: none;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(72deg);
+    }
+    25%{
+        transform: rotate(144deg);
+    }
+    50%{
+        transform: rotate(216deg);
+    }
+    75%{
+        transform: rotate(288deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.moon-description{
+    width: 75%;
+    margin-top: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px 0px 50px 0px;
+    padding: 10px; 
+    color: #fff;
+    text-align: center;
+    background: black;
+    box-shadow: 5px 5px 10px 0px #fff;
+    margin-bottom: 30px;
+}
+
+.moon-description img{
+    width: 65%;
+    -webkit-user-drag: none;
+}
+
+.moon-description h1{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.moon-description p{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.moon-cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 50px;
+    padding: 10px;
+    gap: 25px;
+}
+
+.moon-card{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: 0px 50px 0px 50px;
+    padding: 10px;
+    background: black;
+    transition: 0.3s ease-in-out;
+}
+
+.moon-card:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 0px #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.moon-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 50px 0px 50px;
+    -webkit-user-drag: none;
+}
