@@ -72,7 +72,7 @@ body{
 .content img{
     width: 45%;
     -webkit-user-drag: none;
-    animation: rotate 20s linear infinite;
+    animation: rotate 80s linear infinite;
 }
 
 @keyframes rotate {
